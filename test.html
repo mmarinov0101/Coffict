@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+</head>
+
+<body>
+    <p>You can find this page in English and Spanish!</p>
+    <a onclick="languageFunction()" href="#eng" data-reload>English</a>
+    <a onclick="languageFunction()" href="#es" data-reload>Spanish</a>
+    <p id="hi">Welcome everyone</p>
+    
+    <script>
+        function languageFunction() {
+           setTimeout(function(){ history.go(0); }, 200);
+         }
+        var dataReload = document.querySelectorAll("[data-reload]");
+        
+        var eng = {
+                welcome: "Welcome everyone!"
+            };
+        var es = {
+                welcome: "Здрkkkkkавей!"
+            };
+        if(window.location.hash) {
+            if(window.location.hash === "#es") {
+                hi.textContent = es.welcome;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Coffict</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+</head>
+<body id="myPage">
+    <!-- START Top Page -->
+    <div class="container-full-height img-bgr-1">
+        <div class="header row">
+            <div class="col-lg-3">
+                <div class="site-branding">
+                    <img alt="logo" src="images/logo.jpg">
+                    <p class="brown brand_name">Coffict</p>
+                </div>
+            </div>
+            <div class="col-lg-8">
+               <nav class="menu">
+                   <ul>
+                       <li><a href="index.html" class="current" id="home">Home</a></li>
+                       <li>
+                            <div class="dropdown">
+                                <a class="dropbtn" href="coffees.html"><span id="coffees">Our Coffees</span>
+                                <i class="fa fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-content" style="width: 163px">
+                                    <a href="coffees.html" id="food_menu">Menu</a>
+                                    <a href="drink_allergens.html" id="food_allergens">Allergens</a>
+                                </div>
+                            </div>
+                       </li>
+                       <li>
+                           <div class="dropdown">
+                                <a class="dropbtn" href="menu.html"><span id="food">Food</span>
+                                <i class="fa fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-content" style="width: 130px">
+                                    <a href="menu.html" id="drink_menu">Menu</a>
+                                    <a href="food_allergens.html" id="drink_allergens">Allergens</a>
+                                </div>
+                           </div>
+                       </li>
+                       <li><a href="faq.html">FAQs</a></li>
+                       <li><a href="staff.html" id="staff">Staff</a></li>
+                       <li><a href="diy.html" id="diy">DIY</a></li>
+                       <li><a href="apply.html" id="apply">Apply</a></li>
+                       <li><a href="contacts.html" id="contacts">Contacts</a></li>
+                   </ul>
+               </nav>
+           </div>
+           <div class="col-lg-1 lang_switch">
+                <a style="margin-top: 2px;" onclick="languageFunction()" href="#bg" data-reload><img src="images/bulgaria.png"></a>
+                <a style="margin-top: 9px;" onclick="languageFunction()" href="#eng" data-reload><img src="images/uk.png"></a>
+            </div>
+        </div>
+        <div class="top flex-container-center">
+           <div>
+               <h2 id="top_sentence">Join us for a cup of coffee...</h2>
+           </div>
+       </div>
+    </div>
+    <!-- END Top Page -->
+    <!-- START Who we are -->
+    <div class="container">
+        <div class="row flex-container">
+            <div class="col-lg-6">
+                <img alt="image" src="images/index_img_1.jpg">
+            </div>
+            <div class="col-lg-6 flex-container-center padding-all">
+                <div>
+                    <h1 id="who_we_are">Who we are</h1>
+                    <p id="who_we_are_content">Welcome to Coffict - the place, where you can find the best coffee in the world. Our staff will welcome you with a huge smile and will bring you the best experience possible. Coffict is a favourite place inbetween work and home, for any kind of meetings or business arrangements. Coffict is an American company for coffee and a chain of coffee shops, fond in 1971 in Seatle, USA. Currently we have more than 27 thousand coffee shops in more than 70 countries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Who we are -->
+    <!-- START What we offer -->
+    <div style="padding: 5%"></div>
+    <div class="container">
+        <div class="row flex-container bgr-gray">
+            <div class="col-lg-6 flex-container-center padding-all">
+                <div>
+                    <h1 id="what_we_offer">What we offer</h1>
+                    <p id="what_we_offer_content">In coffict you can enjoy a freshly-made aromatic cup of coffee - 100% Arabica, or a cup of tea in a cozy atmosphere, with nice music and Internet access. We also offer unique types of coffee beans, which you can use to make your own coffee at home, as well as original cups and tumblers. The lovers of healthy lifestyle can find delicious breakfasts, sandwiches, smoothies and many more great things in our stores.</p>
+                    <button onclick="window.location.href = 'menu.html'" class="btn-brown" id="btn_1">Our menu</button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img alt="image" src="images/index_img_2.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- END What we offer -->
+    <!-- START Flat White anniversary -->
+    <div class="bgr-gray" style="padding: 6%"></div>
+    <div class="container">
+        <div class="row flex-container bgr-dimgray">
+            <div class="col-lg-6">
+                <img alt="image" src="images/index_img_3.jpg">
+            </div>
+            <div class="col-lg-6 flex-container-center padding-all">
+                <div>
+                    <h1 id="flat_white">Our famous Flat White turns ten</h1>
+                    <p id="flat_white_content">10 years ago, our Flat White took this coffee-loving nation by storm. A velvety smooth storm that’s still going strong today. Just one of the many reasons why you've kept us as your favourite coffee shop for the 10th year running.</p>
+                    <button onclick="window.location.href = 'coffees.html'" class="btn-brown" id="btn_2">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Flat White anniversary -->
+    <!-- START Footer -->
+    <div class="bgr-gray" style="padding: 7%"></div>
+    <hr style="margin: 0">
+    <footer>
+        <div>
+            <div class="flex-container-order bgr-gray">
+                    <div>
+                        <ul>
+                            <li><h4 id="dietary_info">Dietary information</h4></li>
+                            <li><br><br><br><br></li>
+                            <li><a>Nutrition and allergens</a></li>
+                            <li><br><br></li>
+                            <li><a>Detailed dietary information</a></li>
+                            <li><br><br></li>
+                            <li><a>Coffict Express dietary information</a></li>
+                            <li><br><br></li>
+                            <li><a>Ready To Drink dietary information</a></li>
+                            <li><br><br></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><h4 id="business">Business</h4></li>
+                            <li><br><br><br><br></li>
+                            <li><a>Coffict Business Partners</a></li>
+                            <li><br><br></li>
+                            <li><a>Modern Slavery Statement</a></li>
+                            <li><br><br></li>
+                            <li><a>Tax Policy</a></li>
+                            <li><br><br></li>
+                            <li><a>Gender Pay Gap Report</a></li>
+                            <li><br><br></li>
+                        </ul>
+                    </div>
+                    <div style="margin-right: 150px;">
+                        <ul>
+                            <li><h4 id="contact_us">Contact us</h4></li>
+                            <li><br><br><br><br></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><br><br></li>
+                            <li><a href="contact_us.html">Contact us</a></li>
+                            <li><br><br></li>
+                            <li><a>Press</a></li>
+                            <li><br><br></li>
+                            <li><a href="apply.html">Careers</a></li>
+                            <li><br><br></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="container center-text footer padding-tb">
+                <p>Copyright &copy;<span id="copyright">2020 Coffict. All rights reserved.</span>  <a href="#myPage"><i class="fas fa-arrow-circle-up"></i></a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- START Translation JS -->
+    <script>
+        function languageFunction() {
+           setTimeout(function(){ history.go(0); }, 200);
+         }
+        var dataReload = document.querySelectorAll("[data-reload]");
+        
+        var language = {
+            eng: {
+                home: "Home",
+                coffees: "Our Coffees",
+                food: "Food",
+                food_menu: "Menu",
+                food_allergens: "Allergens",
+                drink_menu: "Menu",
+                drink_allergens: "Allergens",
+                diy: "DIY",
+                staff: "Staff",
+                apply: "Apply",
+                contacts: "Contacts",
+                top_sentence: "Join us for a cup of coffee...",
+                who_we_are: "Who we are",
+                who_we_are_content: "Welcome to Coffict - the place, where you can find the best coffee in the world. Our staff will welcome you with a huge smile and will bring you the best experience possible. Coffict is a favourite place inbetween work and home, for any kind of meetings or business arrangements. Coffict is an American company for coffee and a chain of coffee shops, fond in 1971 in Seatle, USA. Currently we have more than 27 thousand coffee shops in more than 70 countries.",
+                what_we_offer: "What we offer",
+                what_we_offer_content: "In coffict you can enjoy a freshly-made aromatic cup of coffee - 100% Arabica, or a cup of tea in a cozy atmosphere, with nice music and Internet access. We also offer unique types of coffee beans, which you can use to make your own coffee at home, as well as original cups and tumblers. The lovers of healthy lifestyle can find delicious breakfasts, sandwiches, smoothies and many more great things in our stores.",
+                flat_white: "Our famous Flat White turns ten",
+                flat_white_content: "10 years ago, our Flat White took this coffee-loving nation by storm. A velvety smooth storm that’s still going strong today. Just one of the many reasons why you've kept us as your favourite coffee shop for the 10th year running.",
+                dietary_info: "Dietary Information",
+                business: "Business",
+                contact_us: "Contact us",
+                btn_1: "Our Menu",
+                btn_2: "Learn more",
+                copyright: "2020 Coffict. All rights reserved.",
+            },
+            bg: {
+                home: "Главна",
+                coffees: "Кафе",
+                food: "Храна",
+                food_menu: "Меню",
+                food_allergens: "Алергени",
+                drink_menu: "Меню",
+                drink_allergens: "Алергени",
+                diy: "Рецепти",
+                staff: "Персонал",
+                apply: "Работа",
+                contacts: "Контакти",
+                top_sentence: "Ела за чаша кафе...",
+                who_we_are: "Кои сме ние",
+                who_we_are_content: "Добре дошли в Coffict - мястото, където можете да откриете най-доброто кафе в света. Нашият екип ще ви посрещне с усмивка и ще ви предостави едно незабравимо изживяване. Coffict e любимо място между работата и дома, за приятелски и семейни срещи, или бизнес ангажименти. Coffict е американска компания за кафе и верига заведения, основана през 1971 г. в Сиатъл, САЩ. До момента разполага с общо над 27 хил. заведения в повече от 70 държави.",
+                what_we_offer: "Какво предлагаме",
+                what_we_offer_content: "В Coffict можете да се насладите на прясно приготвено ароматно кафе - 100% Арабика, или чай в уютна атмосфера, с приятна музика и достъп до интернет. Предлагаме също уникални видове кафе на зърна, които можете да си приготвите у дома, както и оригинални чаши и тъмблъри, някои от които с колекционерска стойност. Любителите на здравословния начин на живот ще намерят при нас вкусни закуски, сандвичи, смутита и други.",
+                flat_white: "Известното ни Мляко с Нес става на 10 години",
+                flat_white_content: "Преди 10 години, нашето мляко с нес за пръв път намери място на нашата сцена и целият свят се влюби в него от пръв поглед. Притежава невероятен вкус, който продължава и до ден днешен. То е една от многото причини, поради което сте ни избрали като любимото ви кафене за десета поредна година.",
+                dietary_info: "Хранителна информация",
+                business: "Бизнес",
+                contact_us: "Свържете се с нас",
+                btn_1: "Нашето Меню",
+                btn_2: "Научи повече",
+                copyright: "2020 Coffict. Всички права запазени.",
+            } 
+        };
+        if(window.location.hash) {
+            if(window.location.hash === "#bg") {
+                home.textContent = language.bg.home;
+                coffees.textContent = language.bg.coffees;
+                food.textContent = language.bg.food;
+                food_menu.textContent = language.bg.food_menu;
+                food_allergens.textContent = language.bg.food_allergens;
+                drink_menu.textContent = language.bg.drink_menu;
+                drink_allergens.textContent = language.bg.drink_allergens;
+                diy.textContent = language.bg.diy;
+                staff.textContent = language.bg.staff;
+                apply.textContent = language.bg.apply;
+                contacts.textContent = language.bg.contacts;
+                top_sentence.textContent = language.bg.top_sentence;
+                who_we_are.textContent = language.bg.who_we_are;
+                who_we_are_content.textContent = language.bg.who_we_are_content;
+                what_we_offer.textContent = language.bg.what_we_offer;
+                what_we_offer_content.textContent = language.bg.what_we_offer_content;
+                flat_white.textContent = language.bg.flat_white;
+                flat_white_content.textContent = language.bg.flat_white_content;
+                dietary_info.textContent = language.bg.dietary_info;
+                business.textContent = language.bg.business;
+                contact_us.textContent = language.bg.contact_us;
+                btn_1.textContent = language.bg.btn_1;
+                btn_2.textContent = language.bg.btn_2;
+                copyright.textContent = language.bg.copyright;
+            }
+        }
+    </script>
+    <!-- END Translation JS -->
+</body>
+</html>

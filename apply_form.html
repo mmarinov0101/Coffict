@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply portal | Coffict</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+</head>
+
+<body class="rainbow-color-changer">
+    <!-- START NAVIGATION -->
+    <div class="header row">
+            <div class="col-lg-4">
+                <div class="site-branding">
+                    <img alt="logo" src="images/logo.jpg">
+                    <p class="brown brand_name">Coffict</p>
+                </div>
+            </div>
+            <div class="col-lg-8">
+               <nav class="menu">
+                   <ul>
+                       <li><a href="index.html">Home</a></li>
+                       <li>
+                           <div class="dropdown">
+                                <a class="dropbtn" href="coffees.html">Our coffees
+                                <i class="fa fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-content" style="width: 163px">
+                                    <a href="coffees.html">Menu</a>
+                                    <a href="drink_allergens.html">Allergens</a>
+                                </div>
+                            </div>
+                       </li>
+                       <li>
+                           <div class="dropdown">
+                                <a class="dropbtn" href="menu.html">Food
+                                <i class="fa fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-content" style="width: 130px">
+                                    <a href="menu.html">Menu</a>
+                                    <a href="food_allergens.html">Allergens</a>
+                                </div>
+                            </div>
+                       </li>
+                       <li><a href="faq.html">FAQs</a></li>
+                       <li><a href="staff.html">Staff</a></li>
+                       <li><a href="diy.html">DIY</a></li>
+                       <li><a href="apply.html" class="current">Apply</a></li>
+                       <li><a href="contacts.html">Contacts</a></li>
+                   </ul>
+               </nav>
+           </div>
+        </div>
+        <!-- END NAVIGATION -->
+        <!-- START APPLY FORM -->
+            <h1 id="apply_form_heading">Welcome to our Apply Portal. If you want to apply for one of the positions mentioned in the previous page, please enter the following information:</h1>
+            <form onsubmit="return ValidateForm(this);" class="apply_form">
+                <table style="margin-left: 400px;" border="0" cellpadding="5" cellspacing="0">
+                    <tr> 
+                        <td style="width: 50%">
+                            <label for="First_Name"><b>First name *</b></label><br>
+                            <input name="First_Name" type="text" maxlength="50" style="width: 260px" />
+                        </td>
+                        <td style="width: 50%">
+                            <label for="Last_Name"><b>Last name *</b></label><br />
+                            <input name="Last_Name" type="text" maxlength="50" style="width: 260px" />
+                        </td> 
+                    </tr>
+                    <tr> 
+                        <td colspan="2">
+                            <label for="Email_Address"><b>Email *</b></label><br />
+                            <input name="Email_Address" type="text" maxlength="100" style="width: 535px" />
+                        </td> 
+                    </tr> 
+                    <tr> 
+                        <td colspan="2">
+                            <label for="Portfolio"><b>Portfolio website</b></label><br />
+                            <input name="Portfolio" type="text" maxlength="255" value="http://" style="width: 535px" />
+                        </td> 
+                    </tr> 
+                    <tr> 
+                        <td colspan="2">
+                            <label for="Position"><b>Position you are applying for *</b></label><br />
+                            <input name="Position" type="text" maxlength="100" style="width: 535px" />
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td>
+                            <label for="Salary"><b>Salary requirements</b></label>
+                            <br/>
+                            <input name="Salary" type="text" maxlength="50" style="width: 260px" /> 
+                        </td> 
+                        <td>
+                            <label for="StartDate"><b>When can you start?</b></label><br />
+                            <input name="StartDate" type="text" maxlength="50" style="width: 260px" />
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Phone"><b>Phone *</b></label><br />
+                            <input name="Phone" type="text" maxlength="50" style="width: 260px" />
+                        </td> 
+                        <td>
+                            <label for="Fax"><b>Fax</b></label><br />
+                            <input name="Fax" type="text" maxlength="50" style="width: 260px" />
+                        </td> 
+                    </tr> 
+                    <tr> 
+                        <td colspan="2">
+                            <label for="Relocate"><b>Are you willing to relocate?</b></label><br />
+                            <input name="Relocate" type="radio" value="Yes" checked="checked" /> <span class="black">Yes</span>      
+                            <input name="Relocate" type="radio" value="No" /> <span class="black">No</span>      
+                            <input name="Relocate" type="radio" value="NotSure" /> <span class="black">Not sure</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="Organization"><b>Last company you worked for</b></label><br />
+                            <input name="Organization" type="text" maxlength="100" style="width: 535px" />
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="Reference"><b>Reference / Comments / Questions</b></label><br />
+                            <textarea name="Reference" rows="7" cols="40" style="width: 535px"></textarea>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <br>
+                            <input name="skip_submit" type="submit" value="Submit" />
+                        </td> 
+                    </tr>
+                </table>
+                <br><br>
+            </form>
+            <!-- END APPLY FORM -->
+            <!-- Form Validation Java Script -->
+            <script type="text/javascript">
+                    function ValidateForm(frm) {
+                        if (frm.First_Name.value == "") {
+                            alert('First name is required.');
+                            frm.First_Name.focus();
+                            return false;
+                                                        }
+                        if (frm.Last_Name.value == "") { 
+                            alert('Last name is required.');
+                            frm.Last_Name.focus();
+                            return false;
+                                                       }
+                        if (frm.Email_Address.value == "") { 
+                            alert('Email address is required.'); 
+                            frm.Email_Address.focus(); 
+                            return false;
+                                                           }
+                        if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { 
+                            alert('Please enter a valid email address.');
+                            frm.Email_Address.focus();
+                            return false; 
+                                                                                                                  }
+                        if (frm.Position.value == "") {
+                            alert('Position is required.');
+                            frm.Position.focus();
+                            return false; 
+                                                      }
+                        
+                        if (frm.Phone.value == "") {
+                            alert('Phone is required.');
+                            frm.Phone.focus(); 
+                            return false; 
+                                                   }
+                        alert("Thanks, " + frm.First_Name.value + ", for submitting your application. We will contact you very soon! :)");
+                        return true;
+                                            }
+            </script>
+            <!-- Form Validation Java Script -->
+</body>
+</html>

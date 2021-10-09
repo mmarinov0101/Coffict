@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form | Coffict</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- START NAVIGATION -->
+    <div class="header row">
+            <div class="col-lg-4">
+                <div class="site-branding">
+                    <img alt="logo" src="images/logo.jpg">
+                    <p class="brown brand_name">Coffict</p>
+                </div>
+            </div>
+            <div class="col-lg-8">
+               <nav class="menu">
+                   <ul>
+                       <li><a href="index.html">Home</a></li>
+                       <li>
+                           <div class="dropdown">
+                                <a class="dropbtn" href="coffees.html">Our coffees
+                                <i class="fa fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-content" style="width: 163px">
+                                    <a href="coffees.html">Menu</a>
+                                    <a href="drink_allergens.html">Allergens</a>
+                                </div>
+                            </div>
+                       </li>
+                       <li>
+                           <div class="dropdown">
+                                <a class="dropbtn" href="menu.html">Food
+                                <i class="fa fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-content" style="width: 130px">
+                                    <a href="menu.html">Menu</a>
+                                    <a href="food_allergens.html">Allergens</a>
+                                </div>
+                            </div>
+                       </li>
+                       <li><a href="faq.html">FAQs</a></li>
+                       <li><a href="staff.html">Staff</a></li>
+                       <li><a href="diy.html">DIY</a></li>
+                       <li><a href="apply.html">Apply</a></li>
+                       <li><a href="contacts.html" class="current">Contacts</a></li>
+                   </ul>
+               </nav>
+           </div>
+        </div>
+        <!-- END NAVIGATION -->
+        <div style="padding: 4.5%;"></div>
+        <!-- START Contact Form -->
+        <div>
+            <form class="contact_us_form" onsubmit="return validate(this)">
+                <h4 id="contact_us_label">Contact us</h4>
+                <p style="font-size: 20px; margin: 0;">What's on your mind? We want to hear it, no matter if it's good or bad. Just <br> let it all out.</p>
+                <div id="contact_us_form_container">
+                    <!-- START Nature of Enquiry Section -->
+                    <h4 class="contact_us_headings">Enquiry</h4>
+                    <label for="option_about">
+                        <p class="contact_us_info_p">So, what is it about?</p>
+                    </label>
+                    <select name="option_about">
+                        <option style="display: none;">Please select a topic:</option>
+                        <option value="visit">A recent Coffict Store Visit</option>
+                        <option value="app">Coffict App</option>
+                        <option value="nutrition">Nutritional/Allergen Queries</option>
+                        <option value="others">Any Other Query</option>
+                    </select>
+                    <p id="contact_us_seven_business_days_paragraph">It may take around seven business days before we get back to <br>you. If you don't want to wait that long, head to our FAQ<br> section. Maybe there's the answer you are looking for.</p>
+                    <h4 class="contact_us_headings">Nature of enquiry</h4>
+                    <label for="option_about">
+                        <p class="contact_us_info_p">What's the nature of your enquiry?</p>
+                    </label>
+                    <select name="option_nature_of_enquiry">
+                        <option style="display: none;">Please select:</option>
+                        <option value="thanks">I want to say thanks</option>
+                        <option value="complain">I want to complain</option>
+                        <option value="question">I have a question/general feedback</option>
+                    </select>
+                    <!-- END Nature of Enquiry Section -->
+                    <!-- START Name Section -->
+                    <h4 class="contact_us_headings">Name</h4>
+                    <label for="First_Name">
+                        <p class="contact_us_info_p">So, we need to know who we are talking to.</p>
+                    </label>
+                    <select name="title" style="width: 13%;">
+                        <option style="display: none;">Title:</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input name="First_Name" type="text" maxlength="50" style="margin-left: 30px;" placeholder="First Name" />
+                    <br><br>
+                    <input name="Last_Name" type="text" maxlength="50" style="width: 42.3%" placeholder="Surname" />
+                    <!-- END Name Section -->
+                    <!-- START Email Section -->
+                    <h4 class="contact_us_headings">Email</h4>
+                    <label for="email">
+                        <p class="contact_us_info_p">Please give us your email, so we can send you a message.</p>
+                    </label>
+                    <input name="Email_Address" type="text" maxlength="50" style="width: 42.3%" placeholder="example@email.com" />
+                    <!-- END Email Section -->
+                    <!-- START Phone Number Section -->
+                    <h4 class="contact_us_headings">Telephone number
+                        <span style="color: gray;">(Optional)</span></h4>
+                    <label for="phone_number">
+                        <p class="contact_us_info_p">We know no one likes to talk on the phone anymore. But if you <br> do, give us your number.</p>
+                    </label>
+                    <input name="phone_number" type="tel" maxlength="50" style="width: 42.3%"/>
+                    <!-- END Phone Number Section -->
+                    <!-- START Address Section -->
+                    <h4 class="contact_us_headings">Address
+                        <span style="color: gray;">(Optional)</span></h4>
+                    <label for="address">
+                        <p class="contact_us_info_p">Please enter your address here. You won't get any snail mail <br> from us.</p>
+                    </label>
+                    <input name="first_line_of_address" type="text" maxlength="50" style="width: 42.3%" placeholder="First line of address"/>
+                    <br><br>
+                    <input name="second_line_of_address" type="text" maxlength="50" style="width: 42.3%" placeholder="Second line of address"/><br><br>
+                    <input name="third_line_of_address" type="text" maxlength="50" style="width: 42.3%" placeholder="Third line of address"/>
+                    <br><br>
+                    <input name="city" type="text" maxlength="50" style="width: 42.3%" placeholder="City"/>
+                    <br><br>
+                    <input name="country" type="text" maxlength="50" style="width: 42.3%" placeholder="Country"/>
+                    <br><br>
+                    <input name="postcode" type="text" maxlength="50" style="width: 42.3%" placeholder="Postcode"/>
+                    <br><br><br><br><br>
+                    <!-- END Address Section -->
+                    <!-- START Comment Section -->
+                    <label for="comment"><b style="color: firebrick; font-size: 22px">Comment/Question</b></label><br />
+                    <textarea name="comment" rows="7" cols="40" style="width: 535px; height: 200px;" placeholder="Please tell us what's on your mind."></textarea>
+                    <br><br><br><br><br>
+                    <!-- END Comment Section -->
+                    <!-- START Gray Rectangle Section -->
+                    <div id="contact_us_feedback_container">
+                        <br>
+                        <h4>Your feedback is important to us.</h4>
+                        <p class="padding-all-double">All feedback received by us is reviewed and discussed by <br> our feedback team. Please let us know if you would like <br> to receive a response.</p>
+                        <div id="contact_us_checkbox_container">
+                            <label for="responses" class="check_container">
+                                <input type="checkbox" id="responses" name="responses">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>I would like a response</p>
+                            <br><br><br><br><br>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <!-- END Gray Rectangle Section -->
+                    <!-- START Submit Button Section -->
+                    <input name="submit" type="submit" value="Submit" />
+                    <!-- END Submit Button Section -->
+                </div>
+            </form>
+        </div>
+        <div style="padding: 7%;"></div>
+        <!-- END Contact form -->
+        <!-- START Validate JavaScript Function -->
+        <script type="text/javascript">
+                    function validate(frm) {
+                        if (frm.First_Name.value == "") {
+                            alert('First name is required.');
+                            frm.First_Name.focus();
+                            return false;
+                                                        }
+                        if (frm.Last_Name.value == "") { 
+                            alert('Last name is required.');
+                            frm.Last_Name.focus();
+                            return false;
+                                                       }
+                        if (frm.Email_Address.value == "") { 
+                            alert('Email address is required.'); 
+                            frm.Email_Address.focus(); 
+                            return false;
+                                                           }
+                        if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { 
+                            alert('Please enter a valid email address.');
+                            frm.Email_Address.focus();
+                            return false; 
+                                                                                                                  }
+                        alert("Thanks, " + frm.First_Name.value + ", for reaching to us. We will contact you very soon! :)");
+                        return true;
+                                            }
+        </script>
+        <!-- END Validate JavaScript Function -->
+</body>
+</html>
